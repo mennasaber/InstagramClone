@@ -1,0 +1,4 @@
+Image asset 
+BottomNavigationViewEX library
+Fragments
+FragmentPagerAdapter
