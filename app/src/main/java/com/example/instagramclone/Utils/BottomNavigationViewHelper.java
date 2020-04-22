@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 
 import com.example.instagramclone.Share.AddActivity;
 import com.example.instagramclone.Alert.AlertActivity;
-import com.example.instagramclone.Home.MainActivity;
+import com.example.instagramclone.Home.HomeActivity;
 import com.example.instagramclone.Profile.ProfileActivity;
 import com.example.instagramclone.R;
 import com.example.instagramclone.Search.SearchActivity;
@@ -29,7 +29,7 @@ public class BottomNavigationViewHelper {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.ic_house:
-                        Intent intent1 = new Intent(context, MainActivity.class);
+                        Intent intent1 = new Intent(context, HomeActivity.class);
                         context.startActivity(intent1);
                         break;
                     case R.id.ic_search:

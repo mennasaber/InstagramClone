@@ -5,7 +5,6 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -15,10 +14,9 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 
 import com.example.instagramclone.Adapters.SettingAdapter;
-import com.example.instagramclone.EditProfileFragment;
-import com.example.instagramclone.Profile.ProfileActivity;
+import com.example.instagramclone.Profile.EditProfileFragment;
 import com.example.instagramclone.R;
-import com.example.instagramclone.SignOutFragment;
+import com.example.instagramclone.Profile.SignOutFragment;
 import com.example.instagramclone.Utils.BottomNavigationViewHelper;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
@@ -32,16 +30,18 @@ public class SettingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
         mViewPager = findViewById(R.id.container);
+        mViewPager.setVisibility(View.GONE);
+
         setupBottomNavigationView();
         setupToolbar();
         setupSettingOptions(SettingActivity.this);
         setupFragment();
-
     }
 
     private void setupViewPager(Integer fragmentNumber) {
         RelativeLayout relativeLayout = findViewById(R.id.relContainer);
         relativeLayout.setVisibility(View.GONE);
+        mViewPager.setVisibility(View.VISIBLE);
         mViewPager.setCurrentItem(fragmentNumber);
     }
 
