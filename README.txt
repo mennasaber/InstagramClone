@@ -5,3 +5,5 @@ FragmentPagerAdapter
 FragmentStatePagerAdapter
 Universal Image Loader
 GridView
+Cloud firestore
+Firebase authentication

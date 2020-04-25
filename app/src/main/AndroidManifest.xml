@@ -11,14 +11,14 @@
         android:roundIcon="@drawable/ic_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home.HomeActivity"/>
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".Login.RegisterActivity"/>
+        <activity android:name=".Login.LoginActivity" />
         <activity android:name=".Setting.SettingActivity" />
         <activity android:name=".Share.AddActivity" />
         <activity android:name=".Profile.ProfileActivity" />
         <activity android:name=".Alert.AlertActivity" />
         <activity android:name=".Search.SearchActivity" />
-        <activity android:name=".RegisterActivity">
+        <activity android:name=".Home.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
